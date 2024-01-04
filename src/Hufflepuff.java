@@ -43,5 +43,16 @@ public class Hufflepuff extends Hogwarts {
                 + ". Сила магии - " + getPowerOfMagic() + ". Расстояние трансгрессии - " + getTransgressionDistance()
                 + ". Трудолюбие - " + getHardWork() + ". Верность - " + getLoyalty() + ". Честность - " + getHonesty());
     }
+    public void compare(Hufflepuff otherStudent) {
+        int thisScore = this.hardWork + this.loyalty + this.honesty;
+        int otherScore = otherStudent.hardWork + otherStudent.loyalty + otherStudent.honesty;
+        if (thisScore > otherScore) {
+            System.out.println(getName() + " " + getSurName() + " Лучший Пуффендуец, чем " + otherStudent.getName() + " " + otherStudent.getSurName());
+        } else if (thisScore < otherScore) {
+            System.out.println(otherStudent.getName() + " " + otherStudent.getSurName() + " Лучший Пуффендуец, чем " + getName() + " " + getSurName());
+        } else {
+            System.out.println("Оба студента равны.");
+        }
+    }
 
 }

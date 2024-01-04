@@ -53,5 +53,16 @@ public class Ravenclaw extends Hogwarts {
                 + ". Ум - " + getMind() + ". Мудрость - " + getWisdom() + ". Остроумие - " + getWit()
                 + ". Творчество - " + getCreation());
     }
+    public void compare(Ravenclaw otherStudent) {
+        int thisScore = this.mind + this.wisdom + this.wit + this.creation;
+        int otherScore = otherStudent.mind + otherStudent.wisdom + otherStudent.wit + otherStudent.creation;
+        if (thisScore > otherScore) {
+            System.out.println(getName() + " " + getSurName() + " Лучший Когтевранец, чем " + otherStudent.getName() + " " + otherStudent.getSurName());
+        } else if (thisScore < otherScore) {
+            System.out.println(otherStudent.getName() + " " + otherStudent.getSurName() + " Лучший Когтевранец, чем " + getName() + " " + getSurName());
+        } else {
+            System.out.println("Оба студента равны.");
+        }
+    }
 }
 

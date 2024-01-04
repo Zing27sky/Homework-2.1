@@ -12,6 +12,7 @@ public class Hogwarts {
         this.powerOfMagic = powerOfMagic;
         this.transgressionDistance = transgressionDistance;
     }
+
     public String getFaculty() {
         return faculty;
     }
@@ -55,6 +56,5 @@ public class Hogwarts {
     public String toString() {
         return this.faculty + " " + this.name + " " + this.surName + " " + this.powerOfMagic + " " + this.transgressionDistance;
     }
-
 }
 
